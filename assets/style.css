@@ -50,6 +50,7 @@ h1{
 .container div:first-child{
     min-width: 481px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .container div:last-child a{
@@ -101,3 +102,47 @@ footer{
     border-color: #f654c4;
     transition: .3s;
 }
+
+@media (max-width: 880px){
+
+    body{
+        background-image: url(/images/bg-mobile.svg);
+    }
+
+    .container{
+        margin-top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1{
+        width: auto;
+    }
+
+    .container div{
+        width: 100%;
+    }
+
+    .container div:first-child{
+        margin-bottom: 20px;
+    }
+
+    .container div:first-child,
+    .container div img{
+        min-width: auto;
+    }
+
+    .container div img{
+        max-width: 400px;
+    }
+
+    .container p{
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
+
+/*mobile will be min-width 623px */
