@@ -49,7 +49,7 @@ h1{
 
 .container div:first-child{
     min-width: 481px;
-    margin-right: 20px;
+    margin-right: 40px;
     text-align: center;
 }
 
@@ -109,6 +109,11 @@ footer{
         background-image: url(/images/bg-mobile.svg);
     }
 
+    header{    
+        padding-top: 15px;
+        margin-bottom: 25px;
+    }
+
     .container{
         margin-top: 0;
         flex-direction: column;
@@ -124,6 +129,7 @@ footer{
     }
 
     .container div:first-child{
+        margin-right: 0;
         margin-bottom: 20px;
     }
 
@@ -145,4 +151,42 @@ footer{
     }
 }
 
-/*mobile will be min-width 623px */
+/*mobile will be min-width 500px */
+
+@media (max-width: 520px){
+    header{
+        text-align: center;
+    }
+
+    header img{
+        margin-left: -15px;
+        width: 70%;
+        min-width: 200px;
+    }
+
+    .container h1{
+        font-size: 28px;
+    }
+
+    .container p{
+        font-size: 14px;
+    }
+
+    .container div img{
+        min-width: 200px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .attribution{
+        text-align: center;
+    }
+
+    .icons{
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
